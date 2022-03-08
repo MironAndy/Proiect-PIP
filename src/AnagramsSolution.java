@@ -24,7 +24,16 @@ public class AnagramsSolution {
         //am adaugat ceva nou
         return hm1.equals(hm2);// I change "==" with equals
     }
-
+    static int findD (int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    return arr[i];
+                }
+            }
+        }
+        return 0;
+    }
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String a = scan.next();
@@ -32,6 +41,9 @@ public class AnagramsSolution {
         scan.close();
         boolean ret = isAnagram(a, b);
         System.out.println( (ret) ? "Anagrams" : "Not Anagrams" );
+
+
+
     }
 }
 
