@@ -21,7 +21,7 @@ public class AnagramsSolution {
                 hm2.put(b.charAt(i), 1);
             }
         }
-        return hm1 == hm2;
+        return hm1.equals(hm2);// I change "==" with equals
     }
 
     public static void main(String[] args) {
