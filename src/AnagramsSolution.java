@@ -21,6 +21,7 @@ public class AnagramsSolution {
                 hm2.put(b.charAt(i), 1);
             }
         }
+        //am adaugat ceva nou
         return hm1.equals(hm2);// I change "==" with equals
     }
 
