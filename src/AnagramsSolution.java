@@ -41,7 +41,7 @@ public class AnagramsSolution {
         scan.close();
         boolean ret = isAnagram(a, b);
         System.out.println( (ret) ? "Anagrams" : "Not Anagrams" );
-
+        System.out.println("test");
 
 
     }
